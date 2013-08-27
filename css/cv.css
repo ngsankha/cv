@@ -33,3 +33,51 @@ body {
   font-size: 14px;
   padding-bottom: 20px;
 }
+
+@media print {
+body {
+  text-align: center;
+  line-height: 2em;
+}
+
+.container {
+  width: 80%;
+  padding-top: 40px;
+}
+
+.content {
+  text-align: left;
+  line-height: 1em;
+}
+
+.text {
+  padding-left: 40px;
+}
+
+.title-head {
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.timerange {
+  padding-left: 60px;
+  font-style: italic;
+  line-height: 1.4em;
+}
+
+.updated {
+  font-style: italic;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+
+a[href]:after {
+  font-style: italic;
+  font-size: 12px;
+  content:" (" attr(href) ")";
+}
+
+.break {
+  page-break-before: always;
+}
+}
