@@ -87,6 +87,10 @@ body {
     display: inline;
   }
 
+  strong {
+    font-style: italic;
+  }
+
   .break {
     page-break-before: always;
   }
