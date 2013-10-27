@@ -34,50 +34,59 @@ body {
   padding-bottom: 20px;
 }
 
+.print-only {
+  display: none;
+}
+
 @media print {
-body {
-  text-align: center;
-  line-height: 2em;
-}
+  @page {
+    margin-top: 10%;
+  }
 
-.container {
-  width: 80%;
-  padding-top: 40px;
-}
+  body {
+    text-align: center;
+    line-height: 2em;
+    font-family: 'EB Garamond', serif;
+  }
 
-.content {
-  text-align: left;
-  line-height: 1em;
-}
+  .container {
+    width: 95%;
+  }
 
-.text {
-  padding-left: 40px;
-}
+  .content {
+    text-align: left;
+    line-height: 1em;
+  }
 
-.title-head {
-  font-weight: bold;
-  line-height: 1.4em;
-}
+  .text {
+    padding-left: 40px;
+  }
 
-.timerange {
-  padding-left: 60px;
-  font-style: italic;
-  line-height: 1.4em;
-}
+  .title-head {
+    font-weight: bold;
+    line-height: 1.4em;
+  }
 
-.updated {
-  font-style: italic;
-  font-size: 10px;
-  padding-bottom: 20px;
-}
+  .timerange {
+    padding-left: 80px;
+    font-style: italic;
+    line-height: 1.4em;
+  }
 
-a[href]:after {
-  font-style: italic;
-  font-size: 12px;
-  content:" (" attr(href) ")";
-}
+  .updated {
+    font-style: italic;
+    font-size: 10px;
+  }
 
-.break {
-  page-break-before: always;
-}
+  a[href]:after {
+    display: none;
+  }
+
+  .print-only {
+    display: inline;
+  }
+
+  .break {
+    page-break-before: always;
+  }
 }
