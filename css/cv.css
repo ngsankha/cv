@@ -18,12 +18,14 @@ body {
 }
 
 .title-head {
+  position: relative;
+  left: -25px;
   font-weight: bold;
   line-height: 2em;
 }
 
 .timerange {
-  padding-left: 60px;
+  padding-left: 20px;
   font-style: italic;
   line-height: 2em;
 }
@@ -40,7 +42,7 @@ body {
 
 @media print {
   @page {
-    margin-top: 10%;
+    margin-top: 2%;
   }
 
   body {
