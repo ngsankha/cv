@@ -47,16 +47,11 @@ body {
 }
 
 @media print {
-  @page {
-    margin-top: 2%;
-  }
-
   h3 {
     line-height: 1em;
   }
 
   body {
-    padding-top: 6%;
     text-align: center;
     line-height: 2em;
     font-family: 'EB Garamond', serif;
@@ -101,12 +96,7 @@ body {
   }
 
   strong {
-    font-weight: bold;
+    font-weight: normal;
     font-style: italic;
-  }
-
-  .break {
-    page-break-before: always;
-    padding-top: 4%;
   }
 }
