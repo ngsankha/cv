@@ -10,7 +10,7 @@ body {
 
 .content {
   text-align: left;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 
 .text {
@@ -31,7 +31,8 @@ body {
 }
 
 .timerange {
-  padding-left: 20px;
+  float: right;
+  padding-right: 20px;
   font-style: italic;
   line-height: 2em;
 }
